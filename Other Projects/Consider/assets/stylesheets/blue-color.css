@@ -1,0 +1,249 @@
+/*
+	Color = Blue	
+*/
+/*===== Background Color =====*/
+.blu-bg,
+.vdo-wrp > a:hover,
+.vdo-wrp > a:focus,
+.sudo-blu:before,
+.testi-caro-wrp .owl-nav > div:hover,
+.sgstn-frm-wrp > form button:hover,
+.rqst-cal-frm button:hover,
+.rqst-cal-frm button:focus,
+.vdo-sml-img::before,
+.pagination > li a:hover,
+.pagination > li a:focus, 
+.pagination > li span,
+.pagination > li span:hover,
+.btns-grp > a:hover,
+.qut-inf > a:hover,
+.qut-inf > a:focus,
+.abt-sec > a:hover,
+.abt-sec > a:focus,
+.grd-shp > form button:hover,
+.grd-shp > form button:focus,
+header.styl5.blu-mnu > nav > ul > li > a:before,
+.grdton-info-inr > a:hover,
+.grdton-info-inr > a:focus,
+.cat2 > a:hover,
+.cat2 > a:focus,
+.wlcm-car .owl-nav > div:hover,
+.wlcm-desc > a:hover,
+.wlcm-desc > a:focus,
+.slc .chosen-drop > ul > li.result-selected,
+.slc .chosen-drop > ul > li.highlighted,
+.slc .chosen-drop > ul > li:hover,
+header.styl6 .hdr-srch1 > a.ylw-bg:hover,
+header.styl6 .hdr-srch1 > a.ylw-bg:focus,
+header.styl8 .hdr-srch1 > a.ylw-bg:hover,
+header.styl8 .hdr-srch1 > a.ylw-bg:focus,
+.scl3 > a:hover,
+.scl3 > a:focus,
+.mnu-cls-btn:hover,
+.prtf2-inf > a:hover,
+.prtf2-inf > a:focus,
+.join-not-btn > a:hover,
+.join-not-btn > a:focus,
+.grdton-info-inr > a.ylw-bg:hover,
+.grdton-info-inr > a.ylw-bg:focus,
+.cnsdr-prj-nav .nav-tabs > li > a:after,
+.blu-skn .prtf-btns > a:hover,
+.blu-skn .prtf-btns > a:focus,
+.prtf-btns > a.blu-bg,
+nav.fxd-mnu.blu-skn > ul > li a:hover,
+nav.fxd-mnu.blu-skn > ul > li a:focus,
+nav.fxd-mnu.blu-skn > ul > li a.active,
+nav.fxd-mnu.blu-skn > ul > li a.active:before,
+.chck-bx [type="checkbox"]:checked + label:after,
+.chck-bx [type="checkbox"]:not(:checked) + label:after,
+.lgn-frm button:hover,
+.lgn-frm button:focus,
+.rgstr-frm button:hover,
+.rgstr-frm button:focus,
+.abt-pic .scl2 > a:hover,
+.abt-pic .scl2 > a:focus,
+.styl3 .fltr-btns > li.active a, 
+.styl3 .fltr-btns > li a:hover, 
+.styl3 .fltr-btns > li a:focus,
+.prtflo-inf6-inr > a:hover,
+.prtflo-inf6-inr > a:focus,
+.prtflo-desc > a:hover,
+.prtflo-desc > a:focus,
+.tagclouds > a:hover,
+.tagclouds > a:focus,
+.hstry-feat .owl-nav > div:hover,
+.hstry-feat .owl-nav > div:focus,
+nav.fxd-mnu > ul > li a:hover:before,
+.tm-img > a i:hover,
+.prm-vdo-inr > span > a:hover,
+.prm-vdo-inr > span > a:focus,
+.prtflo-img-car .owl-nav > div:hover,
+.prtflo-img-car .owl-nav > div:focus,
+header.styl1 nav > ul > li > a:before,
+.rspn-mnu-btn:hover,
+.rspn-scil > li a:hover,
+.rspn-mnu-cls:hover
+{
+	background-color: #00abc9;
+}
+
+.prm-vdo-inr > span > a:hover,
+.prm-vdo-inr > span > a:focus
+{
+	background: #00abc9;
+}
+
+/*===== Text Color =====*/
+.blu-clr,
+nav > ul > li:hover > a,
+nav > ul > li > a:focus,
+.btn1.blu-bg:hover,
+.btn1.blu-bg:focus,
+.vdo-btn > a:hover,
+.vdo-btn > a:focus,
+.serv-bx-inr > h4 a:hover,
+.serv-bx-inr > h4 a:focus,
+.nws-inf > h4 a:hover,
+.nws-inf > h4 a:focus,
+.prtflo-inf > h4 a:hover,
+.prtflo-inf > h4 a:focus,
+.vw-al > a:hover,
+.vw-al > a:focus,
+.scl1 > a:hover,
+.scl1 > a:focus,
+.hdr-srch1 > a:hover,
+.hdr-srch1 > a:focus,
+.scl-btns > a:hover,
+.scl-btns > a:focus,
+.tb-bx-inf > h4 a:hover,
+.tb-bx-inf > h4 a:focus,
+.srv-bx-inf2 > h4 a:hover,
+.srv-bx-inf2 > h4 a:focus,
+.srv-bx-inf2 > a:hover,
+.srv-bx-inf2 > a:focus,
+.tm-inf > h4 a:hover,
+.tm-inf > h4 a:focus,
+.vdo-pst-inf > h2 a:hover,
+.vdo-pst-inf > h2 a:focus,
+.pagination > li.prv a:hover, 
+.pagination > li.nxt a:hover,
+.pagination > li.prv a:focus, 
+.pagination > li.nxt a:focus,
+.srch-frm > button:hover,
+.srch-frm > button:focus,
+.mega-lnks > a:hover,
+.mega-lnks > a:focus,
+header nav ul ul li:hover > a,
+header nav ul ul li > a:focus,
+.tgl-itm.actvt > h4,
+.spt-bx-inf > h4 a:hover,
+.spt-bx-inf > h4 a:focus,
+.prj-inf > h4 a:hover,
+.prj-inf > h4 a:focus,
+.btm-br .scl-btns > a:hover,
+.btm-br .scl-btns > a:focus,
+.prfmnc-chrt > span a,
+header.styl5.blu-mnu > nav > ul > li:hover > a,
+header.styl5.blu-mnu > nav > ul > li > a:focus,
+.hvr3 .prtflo-inf > span.cat > a:hover, 
+.hvr3 .prtflo-inf > span.cat > a:focus,
+.prtflo-btns > a.blu-bg:hover,
+.prtflo-btns > a.blu-bg:focus,
+.prtnrs-car2 .owl-nav > div:hover,
+.expr-bx-inr > a:hover,
+.expr-bx-inr > a:focus,
+.smpl-inf > h4 a:hover,
+.smpl-inf > h4 a:focus,
+.cat3 > a:hover,
+.cat3 > a:focus,
+.nws-inf2 > h4 a:hover,
+.nws-inf2 > h4 a:focus,
+.mnu-btn > a:hover,
+.mnu-btn > a:focus,
+.hdr6-mnu > ul > li:hover > a,
+.hdr6-mnu > ul > li.active > a,
+.hdr6-mnu > ul > li > a:focus,
+.hdr6-mnu ul ul > li:hover > a,
+.hdr6-mnu ul ul > li.active > a,
+.hdr6-mnu ul ul > li > a:focus,
+.scl3 > a,
+.cnsdr-prj-nav .nav-tabs > li.active .prj-tb > h4,
+.prj-feat-lst > li::before,
+.blu-skn .prtf-inf > h3 a:hover,
+.blu-skn .prtf-inf > h3 a:focus,
+.blu-skn .prtf-inf > span a:hover,
+.blu-skn .prtf-inf > span a:focus,
+.prtflo-bx5 .prtflo-inf > span a.blu-clr,
+.prtflo-inf6-inr > h4 a:hover,
+.prtflo-inf6-inr > h4 a:focus,
+.prtflo-clnt-inf > li span a:hover,
+.prtflo-clnt-inf > li span a:focus,
+.sd-wdgt .mini-pst-inf > h5 a:hover,
+.sd-wdgt .mini-pst-inf > h5 a:focus,
+.hstry-feat-inf > h3 a:hover,
+.hstry-feat-inf > h3 a:focus,
+.hstry-dtl > a:hover,
+.hstry-dtl > a:focus,
+.blg-dtl-wrp > p a:hover,
+.blg-dtl-wrp > p a:focus,
+.blg-dtl-athr-inf > h4 a:hover,
+.blg-dtl-athr-inf > h4 a:focus,
+.cmt-inf-lst > span a:hover,
+.cmt-inf-lst > span a:focus,
+.cmt-inf > h5 a:hover,
+.cmt-inf > h5 a:focus,
+.mini-pst.styl2 .mini-pst-inf > h5 a:hover,
+.mini-pst.styl2 .mini-pst-inf > h5 a:focus,
+.hdr-srch-wrp > form button:hover,
+.hdr-srch-wrp > form button:focus,
+.hdr-srch-cls:hover,
+.drk-bg4 .tgl-itm.actvt > h4,
+.hdr-srch > form button:hover,
+.rsnp-mnu ul > li > a:focus,
+.rsnp-mnu ul > li:hover > a,
+.rsnp-mnu ul > li.active > a,
+.rspn-srch > button:hover,
+.rsnp-mnu ul li.menu-item-has-children.active:before
+{
+	color: #00abc9;
+}
+
+/*===== Border Color =====*/
+.vw-al > a.blu-bg,
+.btn1.blu-bg,
+.scl3 > a,
+.blu-brd,
+.chck-bx.styl2 [type="checkbox"]:checked + label:before,
+.chck-bx.styl2 [type="checkbox"]:not(:checked) + label:before,
+.cnt-frm > form input.blu-brd,
+.cnt-frm > form textarea.blu-brd,
+.tagclouds > a:hover,
+.tagclouds > a:focus
+{
+	border-color: #00abc9;
+}
+
+/*===== Border Top Color =====*/ 
+
+{
+	border-top-color: #00abc9;
+}
+
+/*===== Border Right Color =====*/ 
+
+{
+	border-right-color: #00abc9;
+}
+
+/*===== Border Bottom Color =====*/
+header.styl5.blu-mnu nav ul li.menu-item-has-children::before,
+header nav ul li.menu-item-has-children:before
+{
+	border-bottom-color: #00abc9;
+}
+
+/*===== Border Left Color =====*/ 
+
+{
+	border-left-color: #00abc9;
+}

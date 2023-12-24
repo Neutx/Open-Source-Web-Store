@@ -1,0 +1,283 @@
+// Header Section Start here
+.header-section {    
+    z-index: 999;
+    position: relative;
+    background: $white-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .10);
+    @include breakpoint(max-lg) {
+        display: none;
+    }
+    .header-area.menu-fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: $white-color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .10);
+    }
+    .primary-menu {
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            @include breakpoint(lg) {
+                @include breakpoint(max-xl) {
+                    width: 140px;
+                }
+            }
+            a {
+                display: block;
+                img {
+                    display: block;
+                }
+            }
+        }
+        .main-area {
+            @extend %flex;
+            align-items: center;
+            .main-menu {
+                ul {
+                    @extend %flex;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        padding: 0;
+                        &.active {
+                            > a {
+                                color: $theme-color;
+                            }
+                        }
+                        a {
+                            padding: 38px 20px;
+                            color: $title-color;
+                            font-size: $fs-base;
+                            display: block;
+                            @include transition($transition);
+                        }
+                        ul {
+                            @extend %abs;
+                            min-width: 200px;
+                            background: $theme-color;
+                            box-shadow: 0 0 5px rgba(136, 136, 136, .10);
+                            display: block;
+                            top: 100%;
+                            transform: scaleY(0);
+                            transform-origin: top;
+                            z-index: 1;
+                            @include transition($transition);
+                            li {
+                                a {
+                                    font-size: 98%;
+                                    padding: 10px 15px;
+                                    color: $white-color;
+                                    width: 100%;
+                                    border-bottom: 1px solid #ffffff36;
+                                    &:hover {
+                                        padding-left: 20px;
+                                        color: $theme-color;
+                                        background: $white-color;
+                                    }
+                                }
+                                &.active {
+                                    >a {
+                                        color: $theme-color !important;
+                                        background: $white-color;
+                                    }
+                                }
+                                &:last-child {
+                                    a {
+                                        border-bottom: none;
+                                    }
+                                }
+                                &.menu-item-has-children {
+                                    margin-right: 0px;
+                                    a {
+                                        &::after {
+                                            right: 15px;
+                                            transform: translateY(-50%) rotate(-90deg);
+                                        }
+                                    }
+                                }
+                                ul {
+                                    left: 100%;
+                                    top: 0;
+                                }
+                            }
+                        }
+                        &.menu-item-has-children {
+                            margin-right: 16px;
+                            position: relative;
+                            >a {
+                                @extend %rel;
+                                &::after {
+                                    @extend %abs;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    font-weight: 400;
+                                    content: "\ea99" !important;
+                                    font-family: IcoFont !important;
+                                }
+                            }
+                        }
+                        &:hover{
+                            >ul {
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                }
+            }
+            .header-btn {
+                @include breakpoint(xl) {
+                    margin-left: 20px;
+                }
+                .lab-btn {
+                    padding: 16px 40px;
+                    display: block;
+                }
+            }
+        }
+    }
+    &.transparent-header {
+        .header-area.menu-fixed {
+            background: #06264d;
+        }
+        .primary-menu .main-area .main-menu ul li ul {
+            background: #06264d;
+        }
+    }
+    &.home-4 {
+        .primary-menu .main-area .header-btn .lab-btn.style-2 {
+            background: #9c47ed;
+            border-color: #9c47ed;
+            span {
+                color: $white-color;
+            }
+            &:hover {
+                background: transparent;
+                box-shadow: none;
+                span {
+                    color: #9c47ed;
+                }
+            }
+        }
+        .primary-menu .main-area .main-menu ul li a:hover {
+            color: #9c47ed;
+        }
+        .primary-menu .main-area .main-menu ul li.active > a {
+            color: #9c47ed;
+        }
+        .primary-menu .main-area .main-menu ul li ul {
+            background: #9c47ed;
+        }
+        .primary-menu .main-area .main-menu ul li ul li.active > a {
+            color: #9c47ed !important;
+        }
+        a > sup {
+            background: #9c47ed;
+        }
+    }
+    &.home-7 {
+        .primary-menu .main-area .header-btn .lab-btn {
+            @include border-radius(3px);
+            i {
+                margin-left: 5px;
+            }
+        }
+        a > sup {
+            color: $theme-color;
+            background: $white-color;
+        }
+        .active, :hover {
+            > a > sup {
+                color: $white-color;
+                background: $theme-color;
+            }
+        }
+    }
+}
+.transparent-header {
+    position: absolute !important;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    background: transparent;
+    .primary-menu .main-area .main-menu ul li a {
+        color: $white-color;
+    }
+    .primary-menu .main-area .header-btn .lab-btn {
+        span {
+            color: $white-color;
+        }
+    }
+}
+
+// Page Header Section Start Here
+.page-header {
+    margin: 0;
+    padding: 75px 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: url(../../assets/css/bg-image/bg.jpg);
+    @extend %rel;
+    @extend %hidden;
+    @include breakpoint(lg) {
+        padding: 250px 0 150px;
+    }
+    .page-header-shape {
+        @extend %abs;
+        right: 0;
+        top: 0;
+    }
+    .page-title {
+        margin-bottom: 0;
+        @extend %rel;
+        z-index: 1;
+        text-align: center;
+        h2 {
+            margin-bottom: 10px;
+            line-height: 1;
+            font-weight: 600;
+            color: $white-color;
+            @include breakpoint(max-sm) {
+                line-height: 1.5;
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+        }
+        .breadcrumb {
+            background: transparent;
+            margin-bottom: 0;
+            padding: 0;
+            justify-content: center;
+            li {
+                font-weight: 600;
+                text-transform: capitalize;
+                padding: 0px 10px;
+                color: $white-color;
+                @extend %rel;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &::after {
+                    @extend %abs;
+                    width: 5px;
+                    height: 2px;
+                    top: 50%;
+                    right: -3px;
+                    background: $white-color;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

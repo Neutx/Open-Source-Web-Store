@@ -1,0 +1,75 @@
+/* @@@@@@@@@@@@@  Footer Section Start Here  @@@@@@@@@@@@@@ */
+footer {
+    background-position: center bottom;
+    background-size: cover;
+    .footer-top {
+        .footer-item {
+            margin: 30px 0;
+            @include breakpoint(lg) {
+                margin: 0;
+            }
+            .footer-inner {
+                .footer-content {
+                    .title {
+                        margin-bottom: 15px;
+                        margin-top: -8px;
+                        @include breakpoint(sm) {
+                            margin-bottom: 30px;
+                        }
+                        h6 {
+                            font-size: 18px;
+                            color: $white-color;
+                        }
+                    }
+                    .content {
+                        p {
+                            color: $white-color;
+                        }
+                        h6 {
+                            color: $white-color;
+                        }
+                        ul {
+                            @extend %pm;
+                            li {
+                                padding: 8px 0;
+                                p {
+                                    margin-bottom: 0;
+                                    span {
+                                        font-weight: 700;
+                                        padding-right: 10px;
+                                    }
+                                }
+                                a {
+                                    color: $white-color;
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 35px 0;
+        border-top: 1px solid #1f4b9e38;
+        .section-wrapper {
+            p {
+                text-align: center;
+                margin-bottom: 0;
+                color: $white-color;
+                a {
+                    padding: 5px;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    &.home-6 {
+        .footer-bottom {
+            border-top: 1px solid #ffffff21;
+        }
+    }
+}

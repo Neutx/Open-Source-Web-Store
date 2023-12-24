@@ -1,0 +1,70 @@
+ $bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+
+// Colors
+
+$title-color: #000000;
+$desc-color: #696969;
+$theme-color: #ff3372;
+$primary-color: #063793;
+$primary-hover-color : linear-gradient(to left, #a4ea58, #81e18f);
+$border-color: #ecf0f3;
+$white-color: #fff;
+$ash-color: #fffbf8;
+$bg-white: #fefefe;
+$btn-color: linear-gradient(to right, #ffab8b, #ff957d, #ff7d75, #ff6371, #fd4372);
+$btn-hover-color: linear-gradient(to left, #ffab8b, #ff957d, #ff7d75, #ff6371, #fd4372);
+
+// social-media color
+$facebook: #3b5998;
+$twitter: #55acee;
+$linkedin: #007bb5;
+$skype: #2fb7df;
+$youtube: #cd201f;
+$google: #dd4b39;
+$camera: #e4405f;
+$instagram: #e4405f;
+$tumblr: #34465d;
+$behance: #1769ff;
+$star: #e9ba17;
+$green: #0be881;
+$green-h: #0fbcf9;
+$red: #f53b57;
+$yellow: #dec32b;
+$nell: #212fb4;
+$navy: #d8e0f3;
+$plaseholder: #a0a6bc;
+$pinterest : #bd081c;
+$basketball : #e94c89;
+$globe : #ff5e9c;
+$vimeo : #3b5998 ;
+//== Typography
+
+// font-family
+$roboto:  'Roboto', sans-serif;
+
+// font-size
+$fs-base:   16px !default;
+$fs-h1:		60px;
+$fs-h2: 	36px;	
+$fs-h3: 	30px;		
+$fs-h4: 	24px;		
+$fs-h5: 	20px;		
+$fs-h6: 	16px;		
+
+// heading line height
+$lh-h1:		72px;
+$lh-h2:		48px;
+$lh-h3:		48px;
+$lh-h4:		32px;
+$lh-h5:		24px;
+$lh-h6:		30px;
+
+// Description line height
+$lh-p:		24px;
+
+//  transition
+$transition: all 0.3s ease;

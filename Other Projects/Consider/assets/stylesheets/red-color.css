@@ -1,0 +1,69 @@
+/*
+	Color = Red	
+*/
+/*===== Background Color =====*/
+.rd-bg,
+.sudo-rd:before,
+header.styl5.rd-mnu > nav > ul > li > a:before,
+.rd-skn .prtf-btns > a:hover,
+.rd-skn .prtf-btns > a:focus,
+nav.fxd-mnu.rd-skn > ul > li a:hover,
+nav.fxd-mnu.rd-skn > ul > li a:focus,
+nav.fxd-mnu.rd-skn > ul > li a.active,
+nav.fxd-mnu.rd-skn > ul > li a.active:before
+{
+	background-color: #e03335;
+}
+
+/*===== Text Color =====*/
+.rd-clr,
+.btn1.rd-bg:hover,
+.btn1.rd-bg:focus,
+header.styl5.rd-mnu > nav > ul > li:hover > a,
+header.styl5.rd-mnu > nav > ul > li > a:focus,
+.prtflo-btns > a.rd-bg:hover,
+.prtflo-btns > a.rd-bg:focus,
+.rd-skn .prtf-inf > h3 a:hover,
+.rd-skn .prtf-inf > h3 a:focus,
+.rd-skn .prtf-inf > span a:hover,
+.rd-skn .prtf-inf > span a:focus,
+header.rd-mnu .mega-lnks > a:hover, 
+header.rd-mnu .mega-lnks > a:focus,
+header.rd-mnu nav ul ul li:hover > a, 
+header.rd-mnu nav ul ul li > a:focus
+{
+	color: #e03335;
+}
+
+/*===== Border Color =====*/
+.rd-brd,
+.btn1.rd-bg,
+.cnt-frm > form input.rd-brd,
+.cnt-frm > form textarea.rd-brd
+{
+	border-color: #e03335;
+}
+
+/*===== Border Top Color =====*/ 
+
+{
+	border-top-color: #e03335;
+}
+
+/*===== Border Right Color =====*/ 
+
+{
+	border-right-color: #e03335;
+}
+
+/*===== Border Bottom Color =====*/
+header.styl5.rd-mnu nav ul li.menu-item-has-children::before
+{
+	border-bottom-color: #e03335;
+}
+
+/*===== Border Left Color =====*/ 
+
+{
+	border-left-color: #e03335;
+}

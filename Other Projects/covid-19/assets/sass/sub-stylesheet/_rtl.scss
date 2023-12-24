@@ -1,0 +1,247 @@
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    a > sup {
+        margin-right: 5px;
+    }
+    .faq-section .section-wrapper .accordion li .accordion-list .left {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    footer .footer-top .footer-item .footer-inner .footer-content .content ul li a i, .corona-count-section .corona-count-bottom .ccb-content ul li i, .safe-actions .sa-content-part .sa-title h6 i, .safe-actions .sa-content-part ul li i, .post-item .post-item-inner .post-content .author-date a i, .blog-section.blog-single .section-wrapper .comment-respond .add-comment .comment-form p.comment-form-cookies-consent input {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .corona-item .corona-inner .corona-content {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .post-item .post-item-inner .post-content .author-date a {
+        margin-right: 0;
+        margin-left: 30px;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+    .header-section .primary-menu .main-area .main-menu ul li.menu-item-has-children > a::after {
+        right: auto;
+        left: 0;
+    }
+    .header-section .primary-menu .main-area .main-menu ul li.menu-item-has-children {
+        margin-right: 0;
+        margin-left: 16px;
+        ul li.menu-item-has-children {
+            margin-left: 0;
+        }
+    }
+    .header-section .primary-menu .main-area .main-menu ul li ul li ul {
+        right: 100%;
+        left: auto;
+    }
+    .header-section .primary-menu .main-area .main-menu ul li ul li.menu-item-has-children a::after {
+        transform: translateY(-50%) rotate(90deg);
+        left: 10px !important;
+    }
+    .corona-count-section .corona-count-bottom .ccb-thumb .ccb-video {
+        left: 5%;
+        right: auto;
+    }
+    .lab-ul.icon-style-list > li i {
+        margin: 0 5px 0 15px;
+    }
+    .banner-section.home-2 {
+        background-position: top left;
+    }
+    .banner-section.home-3 .banner-area .content-part .banner-content ul li {
+        padding: 8px 20px 8px 0px;
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    }
+    .service-item.style-2 .service-inner, .blog-section.blog-single .section-wrapper .authors .author-content {
+        @include breakpoint(sm) {
+            text-align: right;
+        }
+    }
+    .blog-section .section-wrapper .post-item .post-item-inner .post-content .post-footer .text-btn i {
+        transform: rotate(180deg);
+        display: inline-block;
+        margin-right: 10px;
+    }
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-left: 0;
+        margin-right: .5em;
+    }
+    .page-header .page-title .breadcrumb li::after {
+        left: -3px;
+        right: auto;
+    }
+    .safe-actions .sa-thumb-part .safe-thumb .shape-icon .sa-icon .saicon-content::before {
+        right: 25px;
+        left: auto;
+    }
+    .shop-page .modal .modal-dialog .modal-content button.close {
+        left: 2px;
+        right: auto;
+    }
+    .shop-page .modal .modal-dialog .modal-content .modal-body .product-details-inner .cart-button .lab-btn {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .widget.letest-product .widget-wrapper ul li .product-content, .shop-single .product-details .post-content form .select-product select {
+        padding-left: auto;
+        padding-right: 15px;
+    }
+    .widget.widget-search .search-wrapper button, .shop-single .product-details .post-content form .select-product i, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select .select-icon {
+        left: 0;
+        right: auto;
+    }
+    .shop-page .shop-product-wrap .product-list-item .product-content {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .shop-single .review .review-content .description .post-item .post-content ul li {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .shop-single .review .review-content .description .post-item .post-content ul li::before {
+        right: 0;
+        left: auto;
+    }
+    .shop-single .review .review-content .review-showing .content li .post-content .entry-meta .posted-on a {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .shop-single .review .review-content .review-showing .content li .post-content {
+        @include breakpoint(md) {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+    }
+    .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5::after {
+        right: 55px;
+        left: auto;
+    }
+    .shop-cart .section-wrapper .cart-top table tbody tr td.product-item .p-content {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon input {
+        @include border-radius(0 50px 50px 0);
+    }
+    .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon input[type="submit"] {
+        @include border-radius(50px 0 0 50px);
+    }
+    .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select .select-icon {
+        @include border-radius(50px 0 0 50px);
+    }
+    .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping button {
+        float: left;
+    }
+    .blog-section.blog-single .section-wrapper .comments .comment-list .comment .com-content .com-title .reply .comment-reply-link i {
+        transform: rotate(160deg);
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .blog-section.blog-single .section-wrapper .navigations-part .right, .blog-section.blog-single .section-wrapper .post-item .post-item-inner .post-content blockquote cite {
+        text-align: left;
+    }
+    .blog-section.blog-single .section-wrapper .navigations-part .left, .wwl-cc-section .section-wrapper .wwl-cc-area .wwl-cc-top .wct-item .wct-inner .wct-content .wct-left-area {
+        text-align: right;
+    }
+    .blog-section.blog-single .section-wrapper .post-item .post-item-inner .post-content .tags-section .scocial-media {
+        @include breakpoint(sm) {
+            text-align: left;
+        }
+    }
+    .blog-section.blog-single .section-wrapper .post-item .post-item-inner .post-content blockquote p {
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    .countdown li .count-number:after {
+        left: -30px;
+        right: auto;
+    }
+    .blog-section.blog-single .section-wrapper .post-item .post-item-inner .post-content blockquote::before {
+        transform: rotate(180deg);
+    }
+    .shop-single .review .review-content .review-showing .client-review .review-form form .rating .rating-title {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .corona-count-section .corona-count-bottom .corona-right .cr-body ul li .cr-country img {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .corona-count-section .corona-count-bottom .corona-right .cr-body ul li .cr-case, .corona-count-section .corona-count-bottom .corona-right .cr-body ul li .cr-deaths {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .corona-count-section .corona-count-bottom .corona-right .cr-body ul li .cr-case::after, .corona-count-section .corona-count-bottom .corona-right .cr-body ul li .cr-deaths::after {
+        right: 0;
+        left: auto;
+    }
+    .wwl-cc-section .section-wrapper .wwl-cc-area .wwl-cc-top .wct-item .wct-inner .wct-content .wct-left-area .wct-area .wct-live {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .wwl-cc-section .section-wrapper .wwl-cc-area .wwl-cc-bottom .wcb-area .wcb-right {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .corona-count-section.home-6 .corona-count-bottom .ccb-thumb .ccb-video {
+        left: 50%;
+    }
+    .team-item.style-4 .team-item-inner .team-thumb {
+        @include breakpoint(sm) {
+            right: auto;
+            left: 0;
+        }
+    }
+    .safe-item.style-2 {
+        @include breakpoint(sm) {
+            padding-right: 10px;
+            padding-left: 40px;
+        }
+        &::before {
+            right: auto;
+            left: 10px;
+        }
+        .safe-content {
+            text-align: right;
+        }
+    }
+    .banner-section.home-3 .banner-area .content-part .banner-content ul li span.count-people {
+        float: left;
+    }
+    .page-header .page-title .breadcrumb li:first-child {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .menu-item-has-children > a::after {
+        right: auto;
+        left: 0;
+    }
+    .relife-fund .relife-wrap .donate-option .donate-pay .person-price {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .corona-count-section.home-7 .corona-count-bottom .ccb-thumb-content .ccb-title, .corona-count-section.home-7 .corona-count-bottom .ccb-thumb-content ul li .media-body {
+        text-align: right !important;
+    }
+    .corona-count-section.home-7 .corona-count-bottom .ccb-thumb-content ul li img {
+        margin-right: 0 !important;
+        margin-left: 15px;
+    }
+    .corona-count-section.home-7 .corona-count-bottom .ccb-thumb-content ul li .shape-image, .service-item.style-3 .service-inner .service-content .sc-shape, .help-country .section-wrapper .hc-item .hc-inner .shape-image {
+        left: 0;
+        right: auto;
+        transform: rotate(180deg);
+    }
+    .help-country .section-wrapper .hc-item .hc-inner .hc-content {
+        padding-right: 20px;
+        padding-left: 60px;
+    }
+}

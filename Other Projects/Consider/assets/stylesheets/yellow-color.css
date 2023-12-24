@@ -1,0 +1,136 @@
+/*
+	Color = Yellow	
+*/
+/*===== Background Color =====*/
+.ylw-bg,
+.sudo-ylw:before,
+.prtflo-inf > span > a:hover,
+.prtflo-inf > span > a:focus,
+.testi-caro-wrp .owl-nav > div,
+.mnu-br2 nav ul li a::before,
+.serv-bx1.styl2:hover > i,
+.err-pg-inr > a:hover,
+.err-pg-inr > a:focus,
+.tm-inf3 > a:hover,
+.tm-inf3 > a:focus,
+header.styl4 nav > ul > li::before,
+.nwsltr-frm > button:hover,
+.nwsltr-frm > button:focus,
+header.styl5.ylw-mnu > nav > ul > li > a:before,
+.hndl-inf > a:hover,
+.hndl-inf > a:focus,
+.hndl-car .owl-nav > div:hover,
+.grdton-info-inr > a.ylw-bg,
+.prj-btns > a:hover,
+.prj-btns > a:focus,
+nav.fxd-mnu.ylw-skn > ul > li a:hover,
+nav.fxd-mnu.ylw-skn > ul > li a:focus,
+nav.fxd-mnu.ylw-skn > ul > li a.active,
+nav.fxd-mnu.ylw-skn > ul > li a.active:before,
+.cnt-frm > form button:hover,
+.cnt-frm > form button:focus,
+.blg-lst-img-car .owl-nav > div:hover,
+.blg-lst-img-car .owl-nav > div:focus,
+.drk-bg4 .serv-bx1.styl2:hover > i,
+.blk4-lyr .serv-bx1.styl2:hover > i
+{
+	background-color: #fde428;
+}
+
+/*===== Text Color =====*/
+.ylw-clr,
+.mnu-br2 nav ul li:hover > a,
+.mnu-br2 nav ul li > a:focus,
+.btn1.ylw-bg:hover,
+.btn1.ylw-bg:focus,
+.btm-br p a:hover,
+.btm-br p a:focus,
+.drk-bg .mini-pst-inf > h5 a:hover,
+.drk-bg .mini-pst-inf > h5 a:focus,
+.drk-bg2 .mini-pst-inf > h5 a:hover,
+.drk-bg2 .mini-pst-inf > h5 a:focus,
+.drk-bg3 .mini-pst-inf > h5 a:hover,
+.drk-bg3 .mini-pst-inf > h5 a:focus,
+.wdgt ul li a:hover,
+.wdgt ul li a:focus,
+.why-bx-inf > h4 a:hover,
+.why-bx-inf > h4 a:focus,
+.vdo-pst > a:hover,
+.vdo-pst > a:focus,
+.scl2 > a:hover,
+.scl2 > a:focus,
+.blu-lyr .mini-pst-inf > h5 a:hover,
+.blu-lyr .mini-pst-inf > h5 a:focus,
+.scrb-frm button.ylw-bg:hover,
+.scrb-frm button.ylw-bg:focus,
+.cnt-inf-innr > a:hover,
+.cnt-inf-innr > a:focus,
+.breadcrumb > li.active,
+.breadcrumb > li a:hover,
+.breadcrumb > li a:focus,
+.tm-bx2-inf > h4 a:hover,
+.tm-bx2-inf > h4 a:focus,
+header.styl4 .scl-btns > a:hover,
+header.styl4 .scl-btns > a:focus,
+header.styl5.ylw-mnu > nav > ul > li:hover > a,
+header.styl5.ylw-mnu > nav > ul > li > a:focus,
+.prtflo-btns > a.ylw-bg:hover,
+.prtflo-btns > a.ylw-bg:focus,
+.prtflo-bx4 > a:hover,
+.prtflo-bx4 > a:focus,
+.hvr4 .prtflo-inf > h5 a:hover,
+.hvr4 .prtflo-inf > h5 a:focus,
+.scl-btns3 > a:hover,
+.scl-btns3 > a:focus,
+.blg-lst-pst-inf > h3 a:hover,
+.blg-lst-pst-inf > h3 a:focus,
+.blg-lst-pst > h3 a:hover,
+.blg-lst-pst > h3 a:focus,
+.blg-lnk-pst > a:hover,
+.blg-lnk-pst > a:focus,
+.blg-lnk-pst > h3 a:hover,
+.blg-lnk-pst > h3 a:focus,
+header.styl4 nav > ul > li:hover > a,
+header.styl4 nav > ul > li > a:focus/*,
+header.styl4 nav .mega-lnks > a:hover, 
+header.styl4 nav .mega-lnks > a:focus*/
+{
+	color: #fde428;
+}
+
+/*===== Border Color =====*/
+.ylw-brd,
+.btn1.ylw-bg,
+.scrb-frm button.ylw-bg,
+.prtflo-bx4 > a:hover,
+.prtflo-bx4 > a:focus,
+.cnt-frm > form input.ylw-brd,
+.cnt-frm > form textarea.ylw-brd
+{
+	border-color: #fde428;
+}
+
+/*===== Border Top Color =====*/ 
+
+{
+	border-top-color: #fde428;
+}
+
+/*===== Border Right Color =====*/ 
+
+{
+	border-right-color: #fde428;
+}
+
+/*===== Border Bottom Color =====*/
+.mnu-br2 nav ul li.menu-item-has-children::before,
+header.styl5.ylw-mnu nav ul li.menu-item-has-children::before
+{
+	border-bottom-color: #fde428;
+}
+
+/*===== Border Left Color =====*/ 
+
+{
+	border-left-color: #fde428;
+}

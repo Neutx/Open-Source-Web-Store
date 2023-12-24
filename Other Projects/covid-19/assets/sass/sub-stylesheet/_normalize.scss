@@ -1,0 +1,212 @@
+/*!
+Template Name: convid-19
+Template URI: https://themeforest.net/user/codexcoder
+Author: codexcoder.com
+Author URI: https://themeforest.net/user/codexcoder
+Description: Description
+Version: 1.0.0
+Text Domain: convid-19
+Tags: clinic, corona, coronavirus, Coronavirus disease, coronavirus prevention, covid, covid-19, covid-19 advises, COVID-19 template, doctors, hospital, medical, medical advises, ncov-2019, responsive
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Global CSS
+# Header CSS
+	*Style-1
+	*Style-2
+	*Mobile Header
+# Page Header
+# Banner
+	*Style-1
+	*Style-2
+# Service
+# Corona-Count
+# Team
+# Safe-Actions
+# About
+	*Style-1
+	*Style-2
+# Blog
+	*Style-1
+	*Style-2
+	*Style-3
+	*Blog Single
+# Blog Widget
+# Sponsor
+# FAQ
+# Contact Us
+# Fore Zero Page
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $white-color;
+	@include breakpoint(max-lg) {
+		margin-top: 72px;
+	}
+	&.box-layout {
+		background: url(../../assets/images/banner/home-4/01.jpg) no-repeat;
+        background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		.body-wrapper {
+			background: $white-color;
+			@include breakpoint(xl) {
+				max-width: 1200px;
+				margin: 0 auto;
+				margin-top: 30px;
+				overflow: hidden;
+				position: relative;
+			}
+			.transparent-header {
+				left: 0;
+			}
+			.header-area.menu-fixed {
+				@include breakpoint(xl) {
+					width: 1200px;
+					margin: auto;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $desc-color;
+	font-family: $roboto;
+	font-size: $fs-base;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a h1, a h2, a h3, a h4, a h5, a h6   {
+	clear: both;
+	font-weight: 700;
+	line-height: 1.4;
+	font-family: $roboto;
+	color: $title-color;
+}
+h1 {
+	font-size: $fs-h1;
+}
+
+h2{
+	font-size: $fs-h4;
+}
+
+h3 {
+	font-size: $fs-h4;
+}
+
+h4 {
+	font-size:$fs-h5;
+}
+
+h5 {
+ 	font-size: $fs-h5;
+}
+h6 {
+	font-size: $fs-h6;
+}
+@include breakpoint(sm) {
+	h1 {
+		font-size: $fs-h1;
+		line-height: $lh-h1;
+	}
+	
+	h2{
+		font-size: $fs-h2;
+		line-height: $lh-h2;
+	}
+	
+	h3 {
+		font-size: $fs-h3;
+		line-height: $lh-h3;
+	}
+	
+	h4 {
+		font-size:$fs-h4;
+		line-height: $lh-h4;
+	}
+	
+	h5 {
+		font-size: $fs-h5;
+		line-height: $lh-h5;
+	}
+	
+	h6 {
+		font-size: $fs-h6;
+		line-height: $lh-h6;
+	}
+}
+
+p {
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 15px;
+	@include breakpoint(sm) {
+		font-size: $fs-base;
+	}
+}
+
+a {
+	color: $title-color;
+	@include transition($transition);
+}
+
+a:visited {
+	color: $title-color;
+	outline: none;
+}
+
+a:hover, a:focus, a:active {
+	color: $title-color;
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: none;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+input, textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	border: 1px solid $border-color;
+	outline: none;
+	padding: 12px 20px;
+	outline: none;
+	@include border-radius(3px);
+}
+select {
+	border: 1px solid $border-color;
+}
+
+
+
