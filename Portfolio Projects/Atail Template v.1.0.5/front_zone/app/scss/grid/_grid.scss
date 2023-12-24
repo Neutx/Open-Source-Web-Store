@@ -1,0 +1,69 @@
+//  Grid system
+
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.container-fluid {
+  @include container-fixed;
+}
+
+.row,
+[class*=" row-col-"],
+[class^="row-col-"] {
+  @include make-row;
+}
+
+@include make-grid-columns;
+
+@include make-ngrid(xs);
+
+@include make-grid(xs);
+
+@media (min-width: $screen-sm-min) {
+  @include make-ngrid(sm);
+  @include make-grid(sm);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-ngrid(md);
+  @include make-grid(md);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-ngrid(lg);
+  @include make-grid(lg);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

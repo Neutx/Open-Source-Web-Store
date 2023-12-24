@@ -1,0 +1,76 @@
+.display-table {
+  display: table;
+  width: 100%;
+  height: inherit;
+  padding-top: 0;
+
+  &-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 38px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: left;
+  margin-bottom: 30px;
+  // min-width: 700px;
+  // font: bold .875rem/1 Montserrat;
+}
+
+thead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  background-color: $thead-bg-color;
+  color: $thead-font-color;
+}
+
+tbody {
+  font-weight: 400;
+  letter-spacing: -1.1px;
+
+  tr {
+    &:nth-child(odd) {
+      background-color: $tr-odd-bg;
+    }
+
+    &:nth-child(even) {
+      background-color: $tr-even-bg;
+    }
+  }
+}
+
+td {
+  color: $tbody-font-color;
+}
+
+td,
+th {
+  line-height: 1.5;
+  // padding: 15px 33px 14px;
+  letter-spacing: 0;
+  font-size: .875rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+
+  @media (min-width: $screen-md-min) {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}

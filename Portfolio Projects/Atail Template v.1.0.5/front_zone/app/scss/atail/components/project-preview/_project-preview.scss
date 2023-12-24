@@ -1,0 +1,364 @@
+.project-preview {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: rgba(0,0,0,.0001);
+
+  @media (max-width: $screen-sm-min - 1px) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+
+  [class*=' row-col-'],
+  [class^='row-col-'] {
+    margin: 0;
+  }
+
+  &:focus {
+    border: 0;
+    outline: none;
+  }
+
+  &-arrow {
+    position: absolute;
+    z-index: 3;
+    bottom: 42px;
+    left: -43px;
+    opacity: .5;
+
+    transform: rotate(-90deg);
+    pointer-events: none;
+    backface-visibility: visible;
+
+    @media (min-width: $screen-md-min) {
+      bottom: 0;
+      left: 50%;
+      transform: rotate(-90deg) translateY(50%);
+      transform-origin: left bottom;
+      min-width: 150px;
+    }
+
+    &-wrapper {
+      position: absolute;
+      width: 20%;
+      z-index: -1;
+    }
+
+    span {
+      font-family: $h-font-family;
+      font-size: 0.75rem;
+
+      display: inline-block;
+
+      vertical-align: middle;
+
+      &:nth-child(1) {
+        transform: rotate(180deg);
+        overflow: hidden;
+        margin-right: 5px;
+      }
+
+      @media (max-width: $screen-sm-min - 1px) {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+      }
+    }
+
+    svg {
+      display: block;
+
+      width: 50px;
+
+      animation: project-arrow 2.2s ease-in infinite;
+    }
+  }
+
+  .projects-item {
+    display: none;
+    padding: 30px 0;
+
+    &-active {
+      display: table;
+    }
+
+    .display-table-cell {
+      @media(min-width: $screen-md-min) {
+        padding-top: 12%;
+
+        vertical-align: top;
+      }
+    }
+  }
+
+  .window-height main .row & {
+    & + div {
+      overflow: hidden;
+      // display: none;
+      @media(max-width: $screen-md-min - 1px) {
+        // display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: auto;
+      }
+    }
+  }
+
+  // project preview image
+  &-images {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+
+    height: 100%;
+    // width: calc(100% + 30px);
+
+    transition: opacity 0.6s ease;
+    @media(max-width: $screen-md-min - 1px) {
+      top: 50%;
+      right: 0;
+
+      width: 50%;
+      // height: 75%;
+
+      transform: translateY(-50%);
+      // min-height: 250px;
+    }
+    @media(min-width: $screen-md-min) {
+      left: 0;
+
+      width: 100%;
+    }
+
+    + div {
+      transition: opacity 0.6s ease;
+    }
+
+    .all-projects-loaded & {
+      display: none;
+
+      + div {
+        display: none;
+      }
+    }
+
+    .all-projects-loading & {
+      transition: opacity 0.3s ease;
+
+      opacity: 0;
+
+      + div {
+        transition: opacity 0.3s ease;
+
+        opacity: 0;
+      }
+    }
+  }
+
+  article {
+    @media( min-width: $screen-md-min) {
+      // max-width: 400px;
+    }
+
+    &:after {
+      clear: both;
+
+      content: '';
+    }
+  }
+}
+
+@keyframes project-arrow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.open-full-post {
+  position: relative;
+
+  display: inline-block;
+  // float: right;
+  clear: both;
+
+  transition: transform $pj-pw-duration ease, opacity $pj-pw-duration ease, color 0.3s ease;
+  transform: translateX(20%);
+
+  opacity: 0;
+
+  .projects-item-animate & {
+    transition: transform $pj-pw-duration ease $pj-pw-delay, opacity $pj-pw-duration ease $pj-pw-delay, color 0.3s ease;
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+
+  .atail-intro & {
+    opacity: 1;
+  }
+
+}
+
+.preview-article {
+  &-header,
+  &-text {
+    overflow: hidden;
+  }
+
+  &-header {
+    h2 {
+      position: relative;
+
+      @media (min-width: $screen-md-min) {
+        max-width: 400px;
+      }
+
+      transition: transform $pj-pw-duration ease, opacity $pj-pw-duration ease;
+      transform: translateY(-150%);
+
+      opacity: 0;
+
+      .projects-item-animate & {
+        transition: transform $pj-pw-duration ease $pj-pw-delay, opacity $pj-pw-duration ease $pj-pw-delay;
+        transform: translateY(0);
+
+        opacity: 1;
+      }
+    }
+  }
+
+  &-text {
+    margin-bottom: 21px;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+
+    @media (min-width: $screen-md-min) {
+      width: 50%;
+    }
+
+    p {
+      position: relative;
+      font-size: 0.875rem; // 14px / 16px
+
+      transition: transform $pj-pw-duration ease, opacity $pj-pw-duration ease;
+      transform: translateY(150%);
+
+      opacity: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .projects-item-animate & {
+        transition: transform $pj-pw-duration + 0.1s ease $pj-pw-duration + 0.1s, transform $pj-pw-duration ease $pj-pw-duration + 0.1s;
+        transform: translateY(0);
+
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.preview-images-item {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 100%;
+  @media(min-width: $screen-md-min) {
+    left: 33.3333%;
+
+    width: 50%;
+  }
+
+  img {
+    // transform: translateX(-110%);
+    font-family: 'object-fit: cover;';
+
+    position: absolute;
+    top: 0;
+    left: -110%;
+
+    display: block;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    // &.contain-fit {
+    //   font-family: 'object-fit: contain;';
+    //   object-fit: contain;
+    // }
+
+    // &.full-fit {
+    //   height: auto;
+    // }
+
+    &.images-item-active {
+      left: 0;
+      @media(min-width: $screen-md-min) {
+        left: -1px;
+      }
+      // transform: translateX(0);
+      // transition: transform $pj-pw-duration ease;
+    }
+  }
+}
+
+.all-projects-ajax-btn,
+.atail main .main-scroll .row .all-projects-ajax-btn {
+
+  @media (max-width: $screen-sm-min - 1px) {
+    left: 0;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1px) {
+    position: absolute;
+    top: 0;
+    left: 15px;
+
+    height: auto;
+  }
+
+  @media (max-width: $screen-md-min - 1px) {
+    position: absolute;
+    top: 0;
+
+    height: auto;
+  }
+}
+
+.single-project {
+  margin-bottom: 115px;
+  margin-top: 115px;
+
+  @media(max-width: $screen-xs-min - 1px) {
+
+    .main-scroll & {
+      margin-bottom: 30px;
+      margin-top: 60px;
+    }
+  }
+
+  + div {
+    margin-bottom: 150px;
+    @media(max-width: $screen-xs-min - 1px) {
+      margin-bottom: 59px;
+    }
+  }
+}
+
+@import './project-count';
+@import './all-projects';
+@import './full-post';
+@import './atail-project-date';
+@import './full-post-mobile-menu';

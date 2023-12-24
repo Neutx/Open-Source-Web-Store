@@ -1,0 +1,6 @@
+{
+     "require": {
+        "phpmailer/phpmailer": "v5.*",
+        "mailchimp/mailchimp": "2.*"
+    }
+}

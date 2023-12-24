@@ -1,0 +1,9 @@
+class Animate {
+  constructor() {
+
+  }
+
+  init() {
+
+  }
+}

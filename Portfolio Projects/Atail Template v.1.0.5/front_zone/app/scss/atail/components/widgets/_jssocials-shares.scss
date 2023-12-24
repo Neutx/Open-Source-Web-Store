@@ -1,0 +1,123 @@
+.atail-sharing {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: bottom;
+    margin-top: 5px;
+    font-size: .75rem;
+    margin: 0 -11px;
+
+    .single-project & {
+      display: block;
+      margin: 0;
+
+      @media (min-width: $screen-sm-min) {
+        text-align: center;
+      }
+
+      a {
+        display: block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 1;
+        text-align: center;
+
+        .fa {
+          line-height: 30px;
+        }
+        // border-right: 1px solid;
+      }
+    }
+
+    // margin-left: 28px;
+}
+
+.jssocials-share-count-box {
+  font-family: $h-font-family;
+  display: inline-block;
+  font-size: .625rem;
+
+  display: none;
+
+  .jssocials-share-count {
+    display: inline-block;
+    padding: 10px 20px;
+    border-left: 1px solid;
+    line-height: 1;
+
+    .post-content-likes & {
+      padding: 0 0 0 5px;
+      border-left: 0;
+    }
+
+    &:empty {
+      padding: 0;
+      border-left: 0;
+    }
+  }
+
+}
+
+.jssocials-share {
+    display: inline-block;
+    margin: 0 11px;
+
+
+    .single-project & {
+      display: inline-block;
+      margin: 0 15px 9px 0;
+      min-width: 20px;
+      border: 1px solid;
+      overflow: hidden;
+      border-radius: 50%;
+
+      // @media(max-width: $screen-xs-min - 1px) {
+      //   margin-left: 0;
+      //   margin-right: 0;
+      // }
+    }
+
+    .post-content-header & {
+      display: inline-block;
+      margin: 0 15px 9px 0;
+      min-width: 20px;
+      // padding: 5px 0;
+      border: 1px solid;
+      overflow: hidden;
+      border-radius: 50%;
+
+      // .post-content-header & {
+      //   display: block;
+      //   margin: 0;
+
+        a {
+          display: block;
+          float: left;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 1;
+          text-align: center;
+
+          .fa {
+            line-height: 30px;
+          }
+          // border-right: 1px solid;
+        }
+      // }
+
+    }
+}
+
+
+.atail-small-line {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid;
+    vertical-align: bottom;
+    margin: 0 27px 0 23px;
+}

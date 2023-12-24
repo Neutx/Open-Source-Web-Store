@@ -1,0 +1,102 @@
+// Atail Header
+// ==========================================================================
+
+.atail-header {
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 0;
+
+  @media (max-width:$screen-md-min - 1px) {
+    transition: height .0s $nav-timeline $nav-duration;
+
+    .container-fluid,
+    .container {
+      padding: 0;
+    }
+  }
+
+  @media(min-width: $screen-md-min) {
+    top: 0;
+
+    height: 70px;
+  }
+
+  @media(min-width: $screen-lg-min) {
+    height: 121px;
+  }
+
+  .atail-header-opened & {
+    height: 100%;
+
+    @media (max-width:$screen-md-min - 1px) {
+      transition: height 0s $nav-timeline;
+    }
+
+    @media(min-width: $screen-md-min) and (max-width: 1400px) {
+      height: $atali-padding - 30px;
+    }
+    @media(min-width: 1401px) {
+      height: $atali-padding;
+    }
+  }
+
+
+  .container,
+  .container-fluid {
+    height: inherit;
+
+    @media(min-width: $screen-md-min) {
+      position: relative;
+
+      height: 100%;
+      padding: inherit;
+    }
+
+    @media(min-width: $screen-md-min) and (max-width: 1400px) {
+      padding: 0 $atali-padding - 15px;
+    }
+    @media(min-width: 1401px) {
+      padding: 0 $atali-padding + 15px;
+    }
+  }
+
+  .grid-bg {
+    z-index: 1;
+    opacity: 1;
+
+    transition: opacity .2s ease;
+
+    .window-height & {
+      opacity: 0;
+    }
+
+    .single-post & {
+      > div {
+        opacity: 0;
+
+        &:nth-child(4) {
+          opacity: 1;
+        }
+
+      }
+    }
+
+  }
+
+  .atail-sidebar-left & {
+    .grid-bg {
+      > div {
+        &:nth-child(4) {
+          opacity: 0;
+        }
+        &:nth-child(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

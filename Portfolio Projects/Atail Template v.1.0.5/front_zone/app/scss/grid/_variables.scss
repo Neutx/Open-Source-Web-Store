@@ -1,0 +1,39 @@
+// Number of columns in the grid.
+
+$grid-columns:              12 !default;
+
+// Media queries
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// Grid system
+
+$grid-gutter-width: 30px !default;
+
+// Container sizes
+
+$container-tablet:             (724px + $grid-gutter-width) !default;
+
+$container-sm:                 $container-tablet !default;
+
+$container-desktop:            (950px + $grid-gutter-width) !default;
+
+$container-md:                 $container-desktop !default;
+
+$container-large-desktop:      (1180px + $grid-gutter-width) !default;
+
+$container-lg:                 $container-large-desktop !default;

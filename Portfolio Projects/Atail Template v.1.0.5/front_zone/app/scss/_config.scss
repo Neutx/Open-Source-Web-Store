@@ -1,0 +1,14 @@
+$headercolor: #008000;
+
+$themes: (
+  theme1: (
+    color: white,
+    bgColor: grey, // background color asdasd
+    headerColor: inherit, // inherit from theme
+    spanColor: purple //sadasdsa
+  ),
+  theme2: (color: orange),
+  theme3: (color: yellow),
+  theme4: (color: green),
+  theme5: (color: blue)
+);

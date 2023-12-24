@@ -1,0 +1,8 @@
+a {
+  font-family: $h-font-family;
+  transition: color .3s ease;
+
+  h2 & {
+    text-decoration: none;
+  }
+}

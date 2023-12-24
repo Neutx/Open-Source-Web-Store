@@ -1,0 +1,173 @@
+.logo {
+  line-height: $nav-xs-height;
+
+  position: absolute;
+  z-index: 2;
+  left: 0;
+
+  width: 50%;
+  height: $nav-xs-height;
+
+  text-align: center;
+
+  @media(max-width: $screen-md-min - 1px) {
+    bottom: 0;
+
+    border-top: 1px solid $nav-logo-border-color;
+    border-right: 1px solid $nav-logo-border-color;
+    background-color: white;
+  }
+
+  @media (min-width: $screen-md-min) {
+    height: 70px;
+    text-align: left;
+
+    &.atail-logo-rotate {
+      transform: rotate(-90deg) translateX(-100%);
+      transform-origin: top left;
+      text-align: right;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    height: 120px;
+  }
+
+  @media(min-width: $screen-md-min) and (max-width: 1400px) {
+    width: calc(14.925% + 70px);
+
+    &.atail-logo-rotate {
+      height: 70px;
+    }
+  }
+
+
+  @media(min-width: 1401px) {
+    top: 0;
+
+    width: calc(14.925% + 100px);
+
+    &.atail-logo-rotate {
+      height: 100px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    table-layout: fixed;
+
+    //width: 100%;
+    height: 100%;
+
+    table-layout: fixed;
+
+    vertical-align: middle;
+    text-decoration: none;
+
+    @media (max-width: $screen-md-min - 1px) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-md-min) {
+      //width: 100%;
+      // width: auto;
+      max-width: 100%;
+      min-width: 70px;
+    }
+
+    @media (min-width: 1401px) {
+      min-width: 100px;
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      vertical-align: middle;
+
+      //font-family: 'object-fit: contain; object-position: center';
+      //  object-fit: contain;
+      //  object-position: center;
+
+      @media (min-width: $screen-md-min) {
+        //font-family: 'object-fit: contain; object-position: left';
+        //object-fit: contain;
+        //object-position: left;
+      }
+      
+    }
+
+  }
+
+  &.atail-logo-rotate {
+    a {
+      img {
+        @media (min-width: $screen-md-min) {
+          font-family: 'object-fit: contain; object-position: right';
+          object-fit: contain;
+          object-position: right;
+        }
+      }
+    }
+  }
+
+  object {
+    position: relative;
+    z-index: -1;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.atail-text-logo {
+  line-height: 1;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  padding: 0 20px;
+
+  vertical-align: middle;
+  text-overflow: ellipsis;
+
+  @media(max-width: $screen-md-min - 1px) {
+    height: 46px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    text-align: center;
+
+    height: 70px;
+
+    padding: 8px 17px;
+
+    .atail-logo-rotate & {
+      height: 70px;
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 20px 12px;
+    height: 120px;
+  }
+
+  @media(min-width: 1401px) {
+
+    .atail-logo-rotate & {
+      height: 100px;
+    }
+
+  }
+
+}

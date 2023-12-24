@@ -1,0 +1,283 @@
+// Label
+@import 'label';
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+input,
+textarea {
+  outline: none;
+  // @include transition(.2s cubic-bezier(.4,0,.2,1));
+  transition: .2s cubic-bezier(.4,0,.2,1);
+  border: 1px solid $input-border-color;
+  font: 400 .875rem/1.2 Montserrat;
+  color: $input-font-color;
+  margin-bottom: 9px;
+
+  &:focus {
+    border-color: darken($input-border-color, 20%);
+    // @include transition(.2s cubic-bezier(.4,0,.2,1));
+    transition: .2s cubic-bezier(.4,0,.2,1);
+  }
+}
+
+.check-boxs {
+  width: 100%;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.check-box {
+  float: left;
+  margin: 0 20px 14px 0;
+  min-width: 145px;
+
+  span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    position: relative;
+    top: 5px;
+    border: 2px solid $checkbox-default-color;
+    // @include transition(.2s cubic-bezier(.4,0,.2,1));
+    transition: .2s cubic-bezier(.4,0,.2,1);
+
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      opacity: 0;
+      background-color: $switcher-enabled-color;
+      height: 2px;
+      // @include transition(.2s cubic-bezier(.4,0,.2,1));
+      transition: .2s cubic-bezier(.4,0,.2,1)
+    }
+
+    &:before {
+      width: 12px;
+      // @include transform(rotate(-52deg) translate(-3px, 8px));
+      transform: rotate(-52deg) translate(-3px, 8px);
+    }
+
+    &:after {
+      width: 7px;
+      // @include transform(rotate(51deg) translate(7px, 4px));
+      transform: rotate(51deg) translate(7px, 4px);
+    }
+  }
+
+  &.switcher {
+    span {
+      width: 30px;
+      border-color: $switcher-default-color;
+      border-radius: 10px;
+      padding: 3px 4px;
+
+      &:before {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $switcher-default-color;
+        // @include transform(rotate(0) translate(0));
+        transform: rotate(0) translate(0);
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    input {
+      &:checked+label {
+        span {
+          &:before {
+            // @include transform(translateX(calc(100% - 2px)));
+            transform: translateX(calc(100% - 2px));
+          }
+        }
+      }
+    }
+  }
+
+  &.radio {
+    span {
+      border-radius: 50%;
+      padding: 4px;
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        // @include transform(rotate(0) translate(0));
+        transform: rotate(0) translate(0);
+      }
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked + label {
+      span {
+        border-color: $switcher-enabled-color;
+
+        &:after,
+        &:before {
+          opacity: 1;
+          background-color: $switcher-enabled-color;
+          // @include transition(.2s cubic-bezier(.4,0,.2,1));
+          transition: .2s cubic-bezier(.4,0,.2,1);
+        }
+      }
+    }
+
+    &:disabled + label {
+      span {
+        border-color: $switcher-disabled-color;
+
+        &:after,
+        &:before {
+          background-color: $switcher-disabled-color;
+        }
+      }
+    }
+  }
+}
+@include placeholder {
+  color: $input-border-color;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  margin-bottom: 19px;
+}
+
+.input-label {
+  label {
+    font-size: .625rem;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    margin-bottom: 9px;
+  }
+}
+
+textarea {
+  padding: 17px 20px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+// select.cs-select {
+select {
+  display: none;
+}
+
+.select-wrapper {
+  height: 45px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 19px;
+}
+
+div.cs-select {
+  outline: none;
+  background-color: $select-bg-color;
+  font: 400 .875rem/1.2 Montserrat;
+  color: $input-font-color;
+
+  .cs-placeholder {
+    -user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 14px 35px 14px 20px;
+    // height: 45px;
+    letter-spacing: .3px;
+    background-image: url('../img/svg/select-ico.svg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+  }
+
+
+  .cs-options {
+    display: none;
+    padding: 0 22px 15px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-top: 2px solid #fff;
+
+      li {
+        font-size: inherit;
+        cursor: pointer;
+        margin-bottom: 14px;
+        color: $select-option-color;
+        // @include transition(.2s cubic-bezier(.4,0,.2,1));
+        transition: .2s cubic-bezier(.4,0,.2,1);
+
+        &:before {
+          content: none;
+        }
+
+        &.cs-selected,
+        &:hover {
+          color: $select-active-option-color;
+          // @include transition(.2s cubic-bezier(.4,0,.2,1));
+          transition: .2s cubic-bezier(.4,0,.2,1);
+        }
+
+        &:first-child {
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+
+  &.cs-active {
+    padding-bottom: 9px;
+
+    .cs-options {
+      display: block;
+    }
+  }
+}
+
+input,
+textarea {
+  transition: border-color .3s ease;
+
+  &.error {
+    border-color: red !important;
+  }
+}

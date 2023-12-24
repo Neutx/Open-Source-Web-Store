@@ -1,0 +1,74 @@
+.atail-team-member {
+
+  margin-bottom: 60px;
+
+  @media(max-width: $screen-md-min - 1px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media(min-width: $screen-md-min) {
+    margin-bottom: 120px;
+  }
+
+  &:first-child {
+    margin-top: 60px;
+
+    @media(min-width: $screen-md-min) {
+      margin-top: 120px;
+    }
+  }
+
+
+  // .atail-team-member-image
+  &-image {
+    display: block;
+    @media(max-width: $screen-sm-min - 1px) {
+      margin-bottom: 26px;
+      width: 100%;
+    }
+  }
+
+  // .atail-team-member-info
+  &-info {
+
+
+    // @media(max-width: $screen-md-min - 1px) {
+    //   padding-left: 30px;
+    //   padding-right: 30px;
+    // }
+
+    @media(min-width: $screen-sm-min) {
+      padding-top: 76px;
+    }
+
+    @media(min-width: $screen-md-min) {
+      padding-left: 58px;
+      max-width: 356px;
+    }
+
+    .small-title {
+      font-size: .75rem; // 12/16
+      margin-bottom: 22px;
+      letter-spacing: 0;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: .875rem; // 14 / 16
+      letter-spacing: -.11px;
+
+      &:last-of-type {
+        margin-bottom: 7px;
+      }
+
+    }
+  }
+
+  > div {
+    @media(max-width: $screen-md-min - 1px) {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+}

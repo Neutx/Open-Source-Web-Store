@@ -1,0 +1,21 @@
+.atail-project-date {
+  display: block;
+  font-size: .875rem; // 14px/16px;
+  font-family: $h-font-family;
+
+  .post-content-header & {
+    margin-bottom: 30px;
+
+    &:first-of-type {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// .atail-proj-date-text {
+//   font-weight: bold;
+// }
+
+.atail-proj-date-value {
+  color: $small-title-color;
+}

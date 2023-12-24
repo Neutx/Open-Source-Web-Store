@@ -1,0 +1,206 @@
+// Atail Main
+// ==========================================================================
+
+main {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  min-height: 100%;
+
+  @media(max-width: $screen-md-min - 1px) {
+    &.typography {
+      height: auto;
+    }
+  }
+
+  @media(min-width: $screen-md-min) {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+      padding-top: 120px;
+    }
+
+  > [class*=' row-col-'],
+  > [class^='row-col-'],
+  > .row {
+    margin: 0;
+  }
+
+  > img {
+    margin-bottom: 30px;
+  }
+
+  // when need main has height 100%
+  .window-height & {
+    height: inherit;
+
+    padding-top: 0;
+
+    .main-scroll > .row,
+    > .row {
+      height: inherit;
+
+      > div {
+        overflow: hidden;
+
+        height: inherit;
+
+        outline: none;
+
+        > div {
+          height: inherit;
+        }
+      }
+    }
+  }
+
+  &.typography {
+    section {
+      margin-bottom: 81px;
+    }
+  }
+
+  .main-scroll {
+    padding-bottom: $nav-xs-height;
+
+    @media(max-width: $screen-md-min - 1px) {
+      padding-top: 0;
+
+      & > * {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        &.figure-extended {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        .window-height & {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    @media(min-width: $screen-md-min) {
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+
+      height: 100%;
+      padding-bottom: 0;
+
+      .window-height & {
+        padding-bottom: $nav-xs-height;
+        padding-top: 70px;
+      }
+
+      & > img {
+        display: block;
+
+        margin-bottom: 115px;
+      }
+    }
+
+    @media (min-width: $screen-lg-min) {
+      .window-height & {
+        padding-top: 120px;
+      }
+    }
+
+    > [class*=' row-col-'],
+    > [class^='row-col-'],
+    > .row {
+      position: relative;
+      margin-top: 60px;
+      margin-right: 0;
+      margin-bottom: 60px;
+      margin-left: 0;
+
+      // @media (min-width: $screen-md-min) {
+      //   margin-top: 60px;
+      //   margin-bottom: 60px;
+      // }
+
+      @media (min-width: $screen-md-min) {
+        margin-top: 120px;
+        margin-bottom: 120px;
+      }
+
+      //all projects
+      &.all-atail-projects-wrapper,
+      &.atail-post {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      // atail blog footer
+      &.atail-footer {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      // atail brands
+      &.atail-brands {
+        margin-bottom: 0;
+      }
+    }
+
+    // projects preview
+    .project-preview-images {
+      & + div {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    > img {
+      display: block;
+      margin-bottom: 30px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .window-height & {
+      height: 100%;
+    }
+
+  }
+}
+
+.content {
+  min-height: 100px;
+  margin-bottom: 10px;
+
+  & > article {
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1px) {
+      .project-preview & {
+        max-width: 80%;
+      }
+    }
+
+  }
+}
+
+.copyright {
+  font-size: .625rem;
+
+  letter-spacing: .05em;
+
+  color: #e3e3e4;
+}
+
+/* row overlay */
+.row-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

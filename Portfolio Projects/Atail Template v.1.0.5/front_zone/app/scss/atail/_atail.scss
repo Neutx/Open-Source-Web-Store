@@ -1,0 +1,510 @@
+// ==========================================================================
+// Atail
+// ==========================================================================
+// .atail - is a core class of theme, wrapp all components
+//
+// .container - grid class, set width your block
+//
+// .window-height - set to body; .atail > main > .row > div > div
+// all have { height:inherit; }
+//
+// .display-table set { display: table; }
+// .display-table-cell set { display: table-cell; vertical-aligh: middle; }
+//
+// .no-padding - make padding 0
+
+.aligncenter,
+.alignleft,
+.alignright,
+.bypostauthor,
+.gallery-caption,
+.screen-reader-text,
+.sticky,
+.wp-caption,
+.wp-caption-text {
+  padding: 0;
+}
+$atali-padding: 100px;
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-size: 16px;
+
+  height: 100%;
+
+  @media (min-width: $screen-md-min) {
+    overflow: hidden;
+  }
+}
+
+body {
+  height: 100%;
+
+  transition: opacity .3s ease;
+
+  @media (min-width: $screen-md-min) {
+    overflow: hidden;
+  }
+
+  &.window-height {
+    overflow: hidden;
+
+    height: 100%;
+  }
+
+  &.atail-hide-body {
+    opacity: 0;
+  }
+
+}
+
+.atail {
+  position: relative;
+
+  height: 100%;
+
+  transition: opacity .2s ease;
+
+  opacity: 0;
+
+  @media(max-width: $screen-md-min - 1px) {
+    height: auto;
+  }
+
+  @media (min-width: $screen-md-min) {
+    overflow: hidden;
+  }
+
+  @media (max-width: $screen-md-min - 1px) {
+    padding: 0;
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: 1400px) {
+    padding-right: $atali-padding - 30px;
+    padding-left: $atali-padding - 30px;
+  }
+
+  @media (min-width: 1401px) {
+    padding-right: $atali-padding;
+    padding-left: $atali-padding;
+  }
+
+  &.home {
+    height: 100vh;
+  }
+
+  &.container,
+  &.container-fluid {
+    @media (min-width: $screen-md-min) and (max-width: 1400px) {
+      padding-right: $atali-padding - 30px;
+      padding-left: $atali-padding - 30px;
+    }
+
+    @media (min-width: 1401px) {
+      padding-right: $atali-padding;
+      padding-left: $atali-padding;
+    }
+  }
+
+  .window-height & {
+    height: inherit;
+  }
+
+  &.atail-opacity-1 {
+    opacity: 1;
+  }
+
+}
+///////////////////////////
+
+*.no-padding,
+.no-padding {
+  @media (min-width: $screen-md-min) {
+    padding: 0;
+
+    &-left {
+      padding-left: 0;
+    }
+
+    &-right {
+      padding-right: 0;
+    }
+  }
+}
+
+*.no-margin,
+.no-margin {
+  @media (min-width: $screen-md-min) {
+    margin: 0;
+  }
+}
+// ***************************
+
+.row,
+[class*=' row-col-'],
+[class^='row-col-'] {
+  background-position: center;
+  background-size: cover;
+}
+
+@import './components/components';
+@import './layout/layout';
+
+@import './wp-test'; 
+
+// atail-brands
+.atail-brands {
+  padding: 134px 0 40px;
+
+  background-color: #f9f9f9;
+  // .atail-brands-item
+  &-item {
+    float: left;
+
+    a {
+      display: block;
+
+      width: 100%;
+      max-width: 100%;
+      height: 101px;
+      margin: 0 auto 47px;
+
+      @media (min-width: $screen-xs-min) {
+        height: 200px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        width: 101px;
+        height: 101px;
+        margin: 0 auto 94px;
+
+        transition: opacity .3s ease;
+
+        opacity: .8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      img {
+        font-family: 'object-fit: contain;';
+
+        display: inline-block;
+
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.foot-section {
+  padding-top: 60px;
+}
+
+.ajax-loader {
+  display: none;
+}
+
+.extended-row {
+
+  color: #fff;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  .small-title,
+  p, 
+  .button {
+    color: #fff;
+  }
+
+}
+
+//******************************************************
+// Intro
+//******************************************************
+
+.intro {
+
+  &-demo {
+
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    padding-top: 207px;
+    padding-bottom: 93px;
+    z-index: 1;
+
+    &-wrapper {
+
+      main .main-scroll & {
+        margin-bottom: 0;
+      }
+
+      > div {
+        padding: 0;
+        margin-bottom: 60px;
+
+        @media(min-width: $screen-sm-min) {
+
+          margin-bottom: 0;
+
+          &:nth-child(1) {
+            transform: translateY(-50%);
+
+            .intro-demo-count {
+              top: 0;
+              left: 25%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          &:nth-child(2) {
+            .intro-demo-count {
+              top: 50%;
+              right: 0;
+              transform: translate(50%, -50%);
+            }
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-80%);
+
+            .intro-demo-count {
+              bottom: 0;
+              right: 3%;
+              transform: translate(0, 50%);
+            }
+          }
+        }
+        @media(min-width: $screen-md-min) {
+          &:nth-child(3) {
+            transform: translateY(-100%);
+          }
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      z-index: 3;
+      padding-left: 33px;
+
+      @media (min-width: $screen-md-min) {
+        width: 89%;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        width: 50%;
+      }
+
+      .open-full-post {
+        opacity: 1;
+        margin-right: 24px;
+        float: right;
+        letter-spacing: 0;
+      }
+
+    }
+
+    &-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        font-size: 'object-fit: cover;';
+        object-fit: cover;
+        transform: scale(1.05);
+        transition: transform .6s ease;
+      }
+
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1957f3;
+      border-right: 1px solid #edf5f8;
+      opacity: .8;
+      z-index: -1;
+    }
+
+    h5 {
+      margin-bottom: 24px;
+    }
+
+    h5,
+    .open-full-post {
+      color: #fff;
+      transition: transform .6s ease;
+    }
+
+    &:hover {
+      h5,
+      .open-full-post {
+        transform: translateY(-25px);
+      }
+      .open-full-post {
+        &:before {
+          transform: translateX(0);
+        }
+      }
+      .intro-demo-image {
+        img {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &-count {
+      position: absolute;
+      z-index: 2;
+      font-size: 9.375rem; // 150 / 16
+      font-family: $h-font-family;
+      opacity: .2;
+    }
+
+  }
+
+  &-test-drive {
+    text-align: center;
+    margin-top: -65px;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 12px;
+    }
+  }
+
+}
+
+.test-drive-rect {
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin-right: 12px;
+  border-left: 5px solid;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.test-drive {
+  @media (max-width: $screen-sm-min - 1px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .intro-test-drive {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    height: 0;
+
+    main .main-scroll & {
+      margin: 0;
+    }
+  }
+}
+
+.intro-title {
+
+  margin-top: 0;
+
+  @media (max-width: $screen-md-min - 1px) {
+    margin-top: 60px;
+  }
+
+}
+
+.intro-top-text {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  z-index: 5;
+
+  @media(min-width: $screen-md-min) {
+    left: 85px;
+    top: 15px;
+  }
+
+  @media(min-width: $screen-lg-min) {
+    left: 115px;
+    top: 37px;
+  }
+
+}
+
+.top-text-hor-line {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 2px;
+    margin-right: 14px;
+    border-top: 2px solid;
+    opacity: .5;
+    vertical-align: middle;
+  }
+}
+
+.top-text-ver-line {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    margin-right: 2px;
+    border-right: 2px solid #86b8e7;
+    opacity: .5;
+    vertical-align: middle;
+  }
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.display-none {
+  display: none;
+}
+
+//**********************************************************
+// body line-height: 1.7; letter-spacing: -0.77px;
+// h2 letter-spacing: -1.5px;
+// h3 letter-spacing: -1.2px;
+// h4 letter-spacing: -0.85px; margin-bottom: 17px;
+// h5 letter-spacing: -0.7px;
+// h5 letter-spacing: -0.58px; margin-bottom: 14px;
+//
+// .nav-list background-color: white;( body color )
+// .window-height .nav-list background-color: transparent;
+//
+// .logo background-color: white;( body color for tablet)
+// .show-nav background-color: white;( body color for tablet)
+//
+//

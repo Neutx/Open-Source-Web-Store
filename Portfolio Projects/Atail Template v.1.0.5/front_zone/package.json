@@ -1,0 +1,47 @@
+{
+  "name": "atail",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parallelshell \"npm run watch-sass\" \"webpack-dev-server --progress --colors\"",
+    "watch-js": "set NODE_ENV=production&& webpack --config ./webpack.production.config.js --progress --colors --watch",
+    "build-js": "set NODE_ENV=production&& webpack --config ./webpack.production.config.js --progress --colors",
+    "build-sass": "node-sass app/scss --output-style expanded -o ../css",
+    "watch-sass": "node-sass --source-map=true --watch app/scss --output-style expanded -o ../css",
+    "autoprefixer": "postcss --use autoprefixer -o ../css/main.css ../css/main.css",
+    "build": "parallelshell \"npm run build-sass\" \"npm run build-js\"",
+    "watch": "parallelshell \"npm run watch-sass\" \"npm run watch-js\""
+  },
+  "author": "InfoStyle",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "classlist-polyfill": "^1.0.3",
+    "css-loader": "^0.23.1",
+    "es6-promise": "^3.2.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.21.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
+    "object-fit-images": "^2.5.3",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.2",
+    "promise-polyfill": "*",
+    "sass-loader": "*",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-plugin-react": "^5.2.2",
+    "eslint-plugin-wordpress": "^0.1.0",
+    "lodash.throttle": "^4.1.0"
+  }
+}

@@ -1,0 +1,210 @@
+// ==========================================================================
+// Components
+// ==========================================================================
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+// body -> font-size: 16px;
+// p, blockquote, figcaption, ol, ul, td  -> font-family: Hind;
+// h1-6, th, input, labels, button, select, link -> Monsterrat Bold
+//
+// h1-h6 -> color: #4d4f54; letter-spacing: -1.8px;( -0.1125rem )
+// h1 -> 72px ( 4.5rem ), mobile 44px ( 2.75rem ) letter-spacing: -1.8px;
+// h2 -> 60px ( 3.75rem ), mobile 36px ( 2.25rem ) letter-spacing: -1.5px;
+// h3 -> 48px ( 3rem ), mobile 30px ( 1.875rem ) letter-spacing: -1.8px;
+// h4 -> 36px ( 2.25rem ), mobile 24px ( 1.5rem ) letter-spacing: -1.8px;
+// h5 -> 30px ( 1.875rem ), mobile 20px ( 1.25rem ) letter-spacing: -1.8px;
+// h6 -> 24px ( 1.5rem ), mobile 18px ( 1.125rem ) letter-spacing: -1.8px;
+//
+// p -> 26px ( 1.625rem ), mobile 16px ( 1rem ), color: #5a5653;
+//
+
+$body-font-family: 'Hind', sans-serif;
+$body-font-size: 16px;
+$body-color: #5a5653;
+
+$h-font-family: 'Montserrat', sans-serif;
+$h-color: #4d4f54;
+$small-title-color: #a9acb5;
+
+$p-color: #5a5653;
+
+$nav-xs-height: 46px;
+$nav-color: #4d4f54;
+$nav-color-hover: #1957f3;
+$nav-color-li-count: #e9e8ee;
+$nav-bg: #1957f3;
+$nav-border-color: #e9e8ee;
+// $nav-logo-border-color: rgba(255, 255, 255, .3);
+$nav-logo-border-color: rgba(0, 0, 0, .8);
+$nav-mobile-color: #fff;
+$nav-color-third-level: #adc4ff;
+
+$white: #fff;
+
+// ANIMATIONS
+// nav.scss, layout header.scss, layout side.scss
+$nav-duration: .5s;
+$nav-timeline: ease;
+
+//
+// Андрій Лебединський
+$label-font-color: #4e5c60;
+$input-font-color: #4d4f54;
+$input-border-color: #dce5e8;
+
+$switcher-default-color: #bacad1;
+$switcher-enabled-color: #546266;
+$switcher-disabled-color: #dbeaf0;
+
+$checkbox-default-color: #b8c9d0;
+
+$select-bg-color: #f7f7f9;
+
+$select-option-color: #cccdd7;
+$select-active-option-color: #4e5c60;
+
+$button-hover-color: #fff;
+$button-hover-bg-color: #39c6cb;
+$button-border-color: #39c6cb;
+
+$thead-bg-color: #c6ced1;
+$thead-font-color: #4d4f54;
+$tbody-font-color: #6e7075;
+
+$tr-odd-bg: #e8eef0;
+$tr-even-bg: #edf3f5;
+
+// Project previev animation
+// ==========================================================================
+$pj-pw-duration: .4s;
+$pj-pw-delay: .2s;
+
+// Border color grid and animation wrap
+$grid-border-bg: #edf5f8;
+
+// full post openFullPost
+$open-full-post-duration: .4s;
+
+// delete
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 1.67;
+  // letter-spacing: -.05125em; //-.82px;
+  // line-height: 1.57;
+
+  letter-spacing: -.77px;
+
+  color: $body-color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+// Multitext
+// ==========================================================================
+@import './atail-multitext/atail-multitext';
+
+// Blockquote
+// ==========================================================================
+@import './blockquotes/blockquote';
+
+// Blog
+// ==========================================================================
+@import './blog/blog';
+
+// Box - promo, suporting
+// ==========================================================================
+@import './box/box';
+
+// Buttons
+// ==========================================================================
+@import './buttons/buttons';
+
+// Category list
+// ==========================================================================
+@import './category-list/category-list';
+
+// Features
+// ==========================================================================
+@import './features/features';
+
+// Figure
+// ==========================================================================
+@import './figure/figure';
+
+// Forms
+// ==========================================================================
+@import './forms/forms';
+
+// Google Maps
+// ==========================================================================
+@import './google-map/map';
+
+// Grid backgrounds
+// ==========================================================================
+@import './grid-bg/grid-bg';
+
+// Navigation
+// ==========================================================================
+@import './nav/nav';
+
+// List
+// ==========================================================================
+@import './lists/lists';
+
+// headers
+// ==========================================================================
+@import './headers/headers';
+
+// Links
+// ==========================================================================
+@import './links/links';
+
+// Atail Logo
+// ==========================================================================
+@import './logo/logo';
+
+// Paragraphs
+// ==========================================================================
+@import './paragraphs/paragraphs';
+
+// POST
+// ==========================================================================
+@import './post/post';
+
+// Preloader
+// ==========================================================================
+@import './preloader/preloader';
+
+// Projects preview
+// ==========================================================================
+@import './project-preview/project-preview';
+
+// Scroll
+// ==========================================================================
+@import './scroll/scroll';
+
+// Single project
+// ==========================================================================
+@import './single-project/single-project';
+
+// Slider
+// ==========================================================================
+@import './slider/slider';
+
+// Tables
+// ==========================================================================
+@import './tables/tables';
+
+// Team
+// ==========================================================================
+@import './team/team';
+
+// Widgets
+// ==========================================================================
+@import './widgets/widgets';

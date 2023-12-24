@@ -1,0 +1,14 @@
+label {
+  -user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font: bold .875rem/1.2 Montserrat;
+  color: $label-font-color;
+  display: inline-block;
+  letter-spacing: 0;
+
+  > input {
+    margin-top: 10px;
+  }
+}

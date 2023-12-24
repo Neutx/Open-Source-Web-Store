@@ -1,0 +1,100 @@
+.description-table,
+figure {
+  margin: 34px 0 40px;
+  padding: 0;
+
+    .description-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .75rem; //12px;
+      font-weight: bold;
+
+      display: block;
+
+      margin-top: 28px;
+      margin-bottom: 20px;
+
+      letter-spacing: .2px;
+
+      color: $small-title-color;
+
+      span {
+        font-size: .625rem; //10px;
+
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+      }
+    }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+
+    max-width: 275px;
+
+    letter-spacing: -.07px;
+  }
+}
+
+.figure-extended {
+  position: relative;
+
+  overflow: hidden;
+
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 158px;
+  }
+
+  img {
+    font-family: 'object-fit: cover;';
+
+    display: block;
+
+    min-height: 400px;
+    max-height: 85vh;
+
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 0;
+
+    width: 90%;
+    padding-left: 30px;
+
+    color: #fff;
+
+    @media (min-width: $screen-sm-min) {
+      width: 60%;
+    }
+
+    @media (min-width: $screen-md-min) {
+      left: 16.666%;
+
+      width: 80%;
+      max-width: 560px;
+      padding-left: 0;
+    }
+  }
+
+  .atail-multitext {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 15%;
+
+    max-width: 40%;
+    padding-right: 15px;
+
+    @media(min-width: $screen-md-min) {
+      right: 8.33333%;
+
+      padding-right: 0;
+    }
+  }
+}

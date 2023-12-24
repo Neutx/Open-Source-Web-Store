@@ -1,0 +1,120 @@
+%headers {
+  font-family: $h-font-family;
+  line-height: .95;
+  margin-top: 0;
+}
+
+@for $i from 1 to 7 {
+  h#{$i} {
+    @extend %headers;
+    color: $h-color;
+    // word-break: break-all;
+    //word-break: break-all;
+    // overflow-x: hidden;
+    // text-overflow: ellipsis;
+  }
+
+  h#{$i} a {
+    text-decoration: none;
+    // color: inherit;
+
+    &:hover {
+      // color:inherit;
+    }
+  }
+}
+
+// this is small title in promo text, blockquote, figcaption
+.small-title,
+.project-count {
+  @extend %headers;
+  display: block;
+  font-size: .875rem; // 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: $small-title-color;
+  letter-spacing: -.35px;
+  margin-bottom: 26px;
+  text-decoration: none;
+}
+
+.small-title {
+  > span {
+    display: block;
+    font-size: .625rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+}
+
+// h1 -> 72px ( 4.5rem ), mobile 44px ( 2.75rem )
+// h2 -> 60px ( 3.75rem ), mobile 36px ( 2.25rem )
+// h3 -> 48px ( 3rem ), mobile 30px ( 1.875rem )
+// h4 -> 36px ( 2.25rem ), mobile 24px ( 1.5rem )
+// h5 -> 30px ( 1.875rem ), mobile 20px ( 1.25rem )
+// h6 -> 24px ( 1.5rem ), mobile 18px ( 1.125rem )
+
+h1 {
+  font-size: 2.75rem;
+  letter-spacing: -.1125rem;
+  margin-bottom: 38px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 4.5rem; // -1.8px
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+  letter-spacing: -.09375rem; // -1.5px
+  line-height: 1;
+  margin-bottom: 23px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 3.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.875rem;
+  letter-spacing: -1.1px;
+  line-height: 1.1;
+  margin-bottom: 21px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 3rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: -.9px;
+  line-height: 1.1;
+  margin-bottom: 17px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 2.25rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: -.75px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 1.875rem;
+  }
+}
+
+h6 {
+  font-size: 1.125rem;
+  letter-spacing: -.58px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,88 @@
+.button,
+.tagcloud a,
+button,
+input[type='submit'] {
+  font-family: 'Montserrat';
+  font-size: .625rem;
+  font-weight: bold;
+
+  display: inline-block;
+
+  width: 243px;
+  max-width: 100%;
+  max-width: 100%;
+  margin: 0 15px 15px 0;
+  // height: 50px;
+  // line-height: 50px;
+  // padding: 17px 87px;
+  padding: 17px 17px;
+  // @include transition(.2s cubic-bezier(.4,0,.2,1));
+
+  transition: .3s cubic-bezier(.4,0,.2,1), border-radius .3s ease;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: $select-active-option-color;
+  // border: 2px solid;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+
+  &:hover {
+    color: $button-hover-color;
+    border-color: $button-border-color;
+    // @include transition(.2s cubic-bezier(.4,0,.2,1));
+    // transition: .2s cubic-bezier(.4,0,.2,1);
+    background-color: $button-border-color;
+    // border-radius: 40px;
+  }
+
+  &.color {
+    color: $button-hover-color;
+    border-color: $button-hover-bg-color;
+    background-color: $button-hover-bg-color;
+    &:hover {
+      border-color: #39c6cb;
+      background-color: #39c6cb;
+    }
+  }
+
+  &.round {
+    border-radius: 25px;
+  }
+  @media (max-width: $screen-xs-min - 1px) {
+    // width: 100%;
+    // padding: 0;
+    margin-right: 0;
+  }
+
+  .promo-box & {
+    border: 0;
+  }
+}
+
+.tagcloud a {
+  font-size: .75rem !important;
+
+  width: auto;
+  min-width: 0;
+  margin-right: 3px;
+  padding: 7px 23px;
+
+  text-transform: none;
+
+  border: 1px solid;
+  border-radius: 25px;
+
+  .atail-dark-footer & {
+    color: white;
+    border-color: white;
+  }
+}
+
+.wpcf7-form-control[type^='submit'],
+.post-sidebar .wpcf7-form-control.wpcf7-submit {
+  border: 0;
+}
