@@ -53,25 +53,29 @@ Contributions are welcome. Please read our [contributing guidelines](https://git
 
 © 2021 Adil Parwez
 
-The Open Web, a free software, is licensed under GPL v3.0. It is shared with the hope that it proves useful,
-but it comes without any warranty—neither implied merchantability nor fitness for a specific purpose.
+The Open Web, a free software, is licensed under GPL v3.0. It is shared with the hope that it proves
+ useful,but it comes without any warranty—neither implied merchantability nor fitness for a specific
+ purpose.
 ```
 ```
 Open Source doesn't mean a free pass to copy the app, upload it elsewhere, or sell a closed-source
 version. Please read the following carefully:
 
 1. If you make a copy of the software under GPL, it must be under the same license. Uploading it on
-closed-source platforms like PlayStore/AppStore/not on GitHub without distributing the source code is not allowed.
+closed-source platforms like PlayStore/AppStore/not on GitHub without distributing the source code
+is not allowed.
   
-2. Selling any copied or modified version of the app under a "non-free" license is prohibited. You must provide
- a copy with the original software or clear instructions on how to obtain it. State all changes, disclose the
-full source code, include the same license, and retain all copyrights.
+2. Selling any copied or modified version of the app under a "non-free" license is prohibited.
+You must provide a copy with the original software or clear instructions on how to obtain it. State
+ all changes, disclose thefull source code, include the same license, and retain all copyrights.
 
 ```
 ```
-In simple terms, you can ONLY use the source code for this app in an `Open Source` project under `GPL v3.0` or later.
-Ensure your source code is clearly disclosed on platforms like GitHub, provide instructions on obtaining the original
-software, clearly state all changes, and retain all copyrights. Usage under any "non-free" license is strictly forbidden.
+In simple terms, you can ONLY use the source code for this app in an `Open Source` project under
+`GPL v3.0` or later.
+Ensure your source code is clearly disclosed on platforms like GitHub, provide instructions on
+obtaining the original software, clearly state all changes, and retain all copyrights. Usage under
+ any "non-free" license is strictly forbidden.
 
 ```
 See the [GNU General Public License](https://github.com/Neutx/Open-Source-Web-Store/blob/main/LICENSE) for more details.
