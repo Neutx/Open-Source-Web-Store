@@ -653,6 +653,7 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 575px) {
   .single-project .project-content .title a {
     font-size: clamp(16px, 3vw, 20px); /* Adjust font size for smaller screens */
+
   }
 }
 .single-project .project-content .title a:hover {
