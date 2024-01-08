@@ -1,40 +1,18 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
-
-    Template Name: Andle - Bootstrap 5 HTML Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
     CSS INDEX
     ===================
 
-    01. Theme default CSS
+  01. Theme default CSS
 	02. Component CSS
 		2.1 - Button CSS
-		2.2 - Form CSS
-		2.3 - Blockquote CSS
+		2.2 - Blockquote CSS
 	03. Header CSS
 		3.1 - Header Main CSS
 	04. Pages CSS (All Page Styles)
-		4.1 - Slider CSS
-		4.2 - Clients & About CSS
-		4.3 - Why Choose & Counter CSS
-		4.4 - Work CSS
-		4.5 - Achieved CSS
-		4.6 - Testimonial CSS
-		4.7 - Skills CSS
-		4.8 - Pricing CSS
-		4.9 - Projects CSS
-		4.10 - Projects Details CSS
-		4.11 - Blog CSS
-		4.12 - Blog Details CSS
-		4.13 - Contact CSS
-		4.14 - FAQ's CSS
-	05. Widget CSS
-		5.1 - Sidebar Widget CSS
-		5.2 - Footer Widget CSS
-	07. Footer CSS
+		4.1 - Projects CSS
+
+	05. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 /*!
@@ -609,11 +587,8 @@ img {
 /*----------------------------------------*/
 /*  04. Page CSS
 /*----------------------------------------*/
-/*--
-/*  4.1 - Slider CSS
-/*----------------------------------------*/
 
-/*  4.9 - Projects CSS
+/*  4.1 - Projects CSS
 /*----------------------------------------*/
 .single-project {
   margin-top: 80px;
@@ -664,17 +639,20 @@ img {
   }
 }
 .single-project .project-content .title a {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px); /* Set a range for font size */
   font-weight: 700;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin-top: 8px;
   display: block;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 575px) {
   .single-project .project-content .title a {
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px); /* Adjust font size for smaller screens */
   }
 }
 .single-project .project-content .title a:hover {
@@ -700,15 +678,6 @@ img {
   visibility: visible;
 }
 
-/*----------------------------------------*/
-/*  05. Widget CSS
-/*----------------------------------------*/
-/*--
-/*  05.1 - Footer Widget CSS
-/*----------------------------------------*/
-/*--
-/*  05.2 - Sidebar CSS
-/*----------------------------------------*/
 /*----------------------------------------*/
 /*  06. Footer CSS
 /*----------------------------------------*/
