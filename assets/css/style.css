@@ -679,6 +679,50 @@ img {
   visibility: visible;
 }
 
+/* Additional styles for the contributor section */
+.contributor-section {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.contributor-info {
+  background-color: #090909;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contributor-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contributor-title a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive styles if needed */
+@media only screen and (max-width: 575px) {
+  .contributor-info {
+    padding: 15px;
+  }
+
+  .contributor-title {
+    font-size: 16px;
+  }
+}
+/* Additional styles for the download link */
+.download-link {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.download-link a {
+  text-decoration: underline;
+}
+
 /*----------------------------------------*/
 /*  06. Footer CSS
 /*----------------------------------------*/
