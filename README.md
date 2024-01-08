@@ -1,5 +1,8 @@
 # TheOpenWeb -  OpenSource Web Template Repository
-Welcome to OpenWebStore, an open-source repository dedicated to hosting and showcasing various website templates. This platform allows developers and designers to contribute their projects, making it a diverse collection for anyone seeking inspiration or practical solutions for web development. <br> *Contributors are welcome.* 
+Welcome to OpenWebStore, an open-source repository dedicated to hosting and showcasing various website templates. This platform allows developers and designers to contribute their projects, making it a diverse collection for anyone seeking inspiration or practical solutions for web development. <br>
+<br>
+*Contributors are welcome.* <br>
+
 
 ![OpenWeb Landing](https://github.com/Neutx/Open-Source-Web-Store/blob/main/assets/images/OpenWeb.jpg)
 
