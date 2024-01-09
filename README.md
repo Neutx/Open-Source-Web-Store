@@ -4,7 +4,7 @@ Welcome to OpenWebStore, an open-source repository dedicated to hosting and show
 *Contributors are welcome.* <br>
 
 
-![OpenWeb Landing](https://github.com/Neutx/Open-Source-Web-Store/blob/main/assets/images/OpenWeb.jpg)
+![OpenWeb Landing](https://github.com/Neutx/Open-Source-Web-Store/blob/main/assets/images/OpenWeb.png)
 
 
 ## Overview
